@@ -76,6 +76,10 @@ data:
         value: /node
       - name: OVERRIDE_BENCHMARK_VERSION
         value: {{ .benchmarkVersion }}
+      - name: DEBUG
+        value: "true"
+      - name: DEBUG_TIME_IN_SEC
+        value: "infinity"
       {{- if .isCustomBenchmark }}
       - name: CONFIG_DIR
         value: {{ .configDir }}
